@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vortex Studio | Plataforma de Games</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="navbar container">
+            <a href="#home" class="logo-link">
+                <div class="logo">
+                    <div class="logo-text">
+                        <span class="vortex-text">VORTEX</span><span class="studio-text">STUDIO</span>
+                    </div>
+                </div>
+            </a>
+            <nav class="menu">
+                <a href="#jogos">JOGOS DISPONÍVEIS</a>
+                <a href="#recursos">RECURSOS</a>
+                <a href="#comunidade">COMUNIDADE</a>
+                <a href="#beneficios">BENEFÍCIOS</a>
+                <a href="#novidades">NOVIDADES</a>
+            </nav>
+            <div class="nav-right">
+                <button class="btn-cart-nav" id="openCartBtn" title="Ver Carrinho">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span id="cartCount" class="cart-badge">0</span>
+                </button>
+                <button class="btn-login" id="openLoginBtn">ENTRAR</button>
+                <div class="menu-toggle" id="mobileMenu"><i class="fa-solid fa-bars"></i></div>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container hero-container">
+            <div class="hero-left">
+                <p class="hero-tagline">CRIAMOS MUNDOS.</p>
+                <h1 class="hero-title">VOCÊ VIVE A<br><span class="text-glow-green">AVENTURA.</span></h1>
+                <p class="hero-subtitle">Na Vortex Studio, desenvolvemos experiências únicas que conectam jogabilidade, emoção e criatividade.</p>
+                <a href="#jogos" class="btn-outline-pink">EXPLORAR JOGOS <i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+            <div class="hero-right-img">
+                <div class="hero-center-logo">
+                    <img src="vortex_studio-removebg-preview.png" alt="Vortex Logo Central">
+                </div>
+            </div>
+        </div>
+        
+        <div class="sidebar-socials">
+            <a href="https://discord.com" target="_blank" id="social-discord"><i class="fa-brands fa-discord"></i></a>
+            <a href="https://youtube.com" target="_blank" id="social-youtube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://instagram.com" target="_blank" id="social-instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://x.com" target="_blank" id="social-x"><i class="fa-brands fa-x"></i></a>
+        </div>
+    </section>
+
+   <section id="jogos" class="section-padding section-border-pink">
+        <div class="container">
+            <div class="section-header-neon">
+                <i class="fa-solid fa-gamepad icon-neon-pink"></i>
+                <h2 class="section-title-neon">1. JOGOS DISPONÍVEIS</h2>
+                <p class="section-subtitle-neon">Adquira nossos títulos digitais e comece a sua jornada instantaneamente.</p>
+            </div>
+            
+            <div class="grid-container">
+                <div class="card game-card" data-id="cyber-horizon">
+                    <div class="game-img" style="background-image: url('https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=500&q=80')"></div>
+                    <h3>Cyber Horizon</h3>
+                    <p>Ação e RPG em um mundo aberto futurista.</p>
+                    <div class="card-actions">
+                        <button class="btn-card btn-buy"><i class="fa-solid fa-credit-card"></i> Comprar Agora</button>
+                        <button class="btn-cart-icon" title="Adicionar ao Carrinho"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+                <div class="card game-card" data-id="shadow-pulse">
+                    <div class="game-img" style="background-image: url('https://images.unsplash.com/photo-1553481187-be93c21490a9?auto=format&fit=crop&w=500&q=80')"></div>
+                    <h3>Shadow Pulse</h3>
+                    <p>Combate tático em ritmo acelerado multiplayer.</p>
+                    <div class="card-actions">
+                        <button class="btn-card btn-buy"><i class="fa-solid fa-credit-card"></i> Comprar Agora</button>
+                        <button class="btn-cart-icon" title="Adicionar ao Carrinho"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+                <div class="card game-card" data-id="neon-race">
+                    <div class="game-img" style="background-image: url('https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=500&q=80')"></div>
+                    <h3>Neon Race 2088</h3>
+                    <p>Corridas insanas com trilha sonora sintética.</p>
+                    <div class="card-actions">
+                        <button class="btn-card btn-buy"><i class="fa-solid fa-credit-card"></i> Comprar Agora</button>
+                        <button class="btn-cart-icon" title="Adicionar ao Carrinho"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+                <div class="card game-card" data-id="pixel-overlord">
+                    <div class="game-img" style="background-image: url('https://images.unsplash.com/photo-1551103782-8ab07afd45c1?auto=format&fit=crop&w=500&q=80')"></div>
+                    <h3>Pixel Overlord</h3>
+                    <p>Estratégia e masmorras em gráficos retro pixel art.</p>
+                    <div class="card-actions">
+                        <button class="btn-card btn-buy"><i class="fa-solid fa-credit-card"></i> Comprar Agora</button>
+                        <button class="btn-cart-icon" title="Adicionar ao Carrinho"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+                <div class="card game-card" data-id="vortex-arena">
+                    <div class="game-img" style="background-image: url('https://images.unsplash.com/photo-1560253023-3ec5d502959f?auto=format&fit=crop&w=500&q=80')"></div>
+                    <h3>Vortex Arena</h3>
+                    <p>O MOBA definitivo da Vortex com heróis lendários.</p>
+                    <div class="card-actions">
+                        <button class="btn-card btn-buy"><i class="fa-solid fa-credit-card"></i> Comprar Agora</button>
+                        <button class="btn-cart-icon" title="Adicionar ao Carrinho"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+                <div class="card game-card" data-id="chrono-trigger">
+                    <div class="game-img" style="background-image: url('https://images.unsplash.com/photo-1538481199705-c710c4e965fc?auto=format&fit=crop&w=500&q=80')"></div>
+                    <h3>Chrono Trigger X</h3>
+                    <p>Viaje pelo tempo neste RPG oriental cinematográfico.</p>
+                    <div class="card-actions">
+                        <button class="btn-card btn-buy"><i class="fa-solid fa-credit-card"></i> Comprar Agora</button>
+                        <button class="btn-cart-icon" title="Adicionar ao Carrinho"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+                <div class="card game-card" data-id="apex-hunter">
+                    <div class="game-img" style="background-image: url('https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=500&q=80')"></div>
+                    <h3>Apex Hunter</h3>
+                    <p>Sobrevivência realista em florestas e cenários extremos.</p>
+                    <div class="card-actions">
+                        <button class="btn-card btn-buy"><i class="fa-solid fa-credit-card"></i> Comprar Agora</button>
+                        <button class="btn-cart-icon" title="Adicionar ao Carrinho"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+                <div class="card game-card" data-id="mecha-assault">
+                    <div class="game-img" style="background-image: url('https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=500&q=80')"></div>
+                    <h3>Mecha Assault</h3>
+                    <p>Pilote robôs gigantes armados até os dentes.</p>
+                    <div class="card-actions">
+                        <button class="btn-card btn-buy"><i class="fa-solid fa-credit-card"></i> Comprar Agora</button>
+                        <button class="btn-cart-icon" title="Adicionar ao Carrinho"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+                <div class="card game-card" data-id="mythic-legends">
+                    <div class="game-img" style="background-image: url('https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=500&q=80')"></div>
+                    <h3>Mythic Legends</h3>
+                    <p>Combates mitológicos PvP baseados em cartas de poder.</p>
+                    <div class="card-actions">
+                        <button class="btn-card btn-buy"><i class="fa-solid fa-credit-card"></i> Comprar Agora</button>
+                        <button class="btn-cart-icon" title="Adicionar ao Carrinho"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+                <div class="card game-card" data-id="cosmic-voyager">
+                    <div class="game-img" style="background-image: url('https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=500&q=80')"></div>
+                    <h3>Cosmic Voyager</h3>
+                    <p>Explore galáxias distantes e batalhe no espaço sideral.</p>
+                    <div class="card-actions">
+                        <button class="btn-card btn-buy"><i class="fa-solid fa-credit-card"></i> Comprar Agora</button>
+                        <button class="btn-cart-icon" title="Adicionar ao Carrinho"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+                <div class="card game-card" data-id="speed-velocity">
+                    <div class="game-img" style="background-image: url('https://images.unsplash.com/photo-1547949003-9792a18a2601?auto=format&fit=crop&w=500&q=80')"></div>
+                    <h3>Speed Velocity</h3>
+                    <p>Simulador de Fórmula 1 com física de última geração.</p>
+                    <div class="card-actions">
+                        <button class="btn-card btn-buy"><i class="fa-solid fa-credit-card"></i> Comprar Agora</button>
+                        <button class="btn-cart-icon" title="Adicionar ao Carrinho"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+                <div class="card game-card" data-id="dead-zone">
+                    <div class="game-img" style="background-image: url('https://images.unsplash.com/photo-1511882150382-421056c89033?auto=format&fit=crop&w=500&q=80')"></div>
+                    <h3>Dead Zone</h3>
+                    <p>Sobreviva ao apocalipse zumbi com seus amigos online.</p>
+                    <div class="card-actions">
+                        <button class="btn-card btn-buy"><i class="fa-solid fa-credit-card"></i> Comprar Agora</button>
+                        <button class="btn-cart-icon" title="Adicionar ao Carrinho"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="recursos" class="section-padding section-border-green bg-alt">
+        <div class="container">
+            <div class="section-header-neon">
+                <i class="fa-solid fa-cube icon-neon-green"></i>
+                <h2 class="section-title-neon text-glow-green">2. RECURSOS</h2>
+                <p class="section-subtitle-neon">Ferramentas e conteúdos que elevam sua experiência.</p>
+            </div>
+            <div class="list-neon-container">
+                <div class="list-neon-item"><i class="fa-solid fa-circle-check"></i> Gráficos de última geração</div>
+                <div class="list-neon-item"><i class="fa-solid fa-circle-check"></i> Trilhas sonoras imersivas</div>
+                <div class="list-neon-item"><i class="fa-solid fa-circle-check"></i> Atualizações constantes</div>
+                <div class="list-neon-item"><i class="fa-solid fa-circle-check"></i> Suporte dedicado</div>
+            </div>
+            <div class="center-btn">
+                <a href="#" class="btn-outline-green">SAIBA MAIS <i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="comunidade" class="section-padding section-border-pink">
+        <div class="container">
+            <div class="section-header-neon">
+                <i class="fa-solid fa-users icon-neon-pink"></i>
+                <h2 class="section-title-neon">3. COMUNIDADE</h2>
+                <p class="section-subtitle-neon">Junte-se a milhares de jogadores apaixonados como você!</p>
+            </div>
+            <div class="list-neon-container">
+                <div class="list-neon-item"><i class="fa-solid fa-comments"></i> Fóruns e discussões</div>
+                <div class="list-neon-item"><i class="fa-solid fa-trophy"></i> Eventos e torneios</div>
+                <div class="list-neon-item"><i class="fa-solid fa-shield-halved"></i> Grupos oficiais</div>
+                <div class="list-neon-item"><i class="fa-solid fa-star"></i> Feedback dos jogadores</div>
+            </div>
+            <div class="center-btn">
+                <a href="#" class="btn-outline-pink">FAZER PARTE <i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="beneficios" class="section-padding section-border-green bg-alt">
+        <div class="container">
+            <div class="section-header-neon">
+                <i class="fa-solid fa-gem icon-neon-green"></i>
+                <h2 class="section-title-neon text-glow-green">4. BENEFÍCIOS</h2>
+                <p class="section-subtitle-neon">Vantagens exclusivas para quem faz parte da Vortex.</p>
+            </div>
+            <div class="list-neon-container">
+                <div class="list-neon-item"><i class="fa-solid fa-circle-check"></i> Conteúdo exclusivo</div>
+                <div class="list-neon-item"><i class="fa-solid fa-circle-check"></i> Acesso antecipado</div>
+                <div class="list-neon-item"><i class="fa-solid fa-circle-check"></i> Descontos especiais</div>
+                <div class="list-neon-item"><i class="fa-solid fa-circle-check"></i> Recompensas VIP</div>
+            </div>
+            <div class="center-btn">
+                <a href="#" class="btn-outline-green">VER BENEFÍCIOS <i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="novidades" class="section-padding section-border-pink">
+        <div class="container">
+            <div class="section-header-neon">
+                <i class="fa-solid fa-bullhorn icon-neon-pink"></i>
+                <h2 class="section-title-neon">5. NOVIDADES</h2>
+                <p class="section-subtitle-neon">Fique por dentro de tudo que está acontecendo na Vortex.</p>
+            </div>
+            <div class="news-neon-list">
+                <div class="news-neon-item">
+                    <div class="news-img-placeholder" style="background-image: url('https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=150&q=80')"></div>
+                    <div class="news-text-content">
+                        <h4>Novo jogo em desenvolvimento!</h4>
+                        <span>20/05/2026</span>
+                    </div>
+                </div>
+                <div class="news-neon-item">
+                    <div class="news-img-placeholder" style="background-image: url('https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=150&q=80')"></div>
+                    <div class="news-text-content">
+                        <h4>Atualização 2.0 disponível agora</h4>
+                        <span>15/05/2026</span>
+                    </div>
+                </div>
+                <div class="news-neon-item">
+                    <div class="news-img-placeholder" style="background-image: url('https://images.unsplash.com/photo-1553481187-be93c21490a9?auto=format&fit=crop&w=150&q=80')"></div>
+                    <div class="news-text-content">
+                        <h4>Evento da comunidade no próximo sábado!</h4>
+                        <span>10/05/2026</span>
+                    </div>
+                </div>
+            </div>
+            <div class="center-btn" style="margin-top: 40px;">
+                <a href="#" class="btn-outline-pink">VER TODAS AS NOVIDADES <i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <span class="vortex-text">V</span><span class="studio-text">S</span>
+            </div>
+            <p>&copy; 2026 Vortex Studio. Todos os direitos reservados. Plataforma Segura.</p>
+        </div>
+    </footer>
+
+    <div class="modal-overlay" id="gameDetailModal">
+        <div class="modal-box details-box">
+            <button class="close-modal" id="closeDetailBtn">&times;</button>
+            <div class="details-content-wrapper">
+                <div class="details-left">
+                    <div id="modalGameImg" class="details-preview-img"></div>
+                    <div class="details-meta">
+                        <p><strong>Desenvolvedor:</strong> <span id="modalGameCreators">Vortex Team</span></p>
+                        <p><strong>Ano de Lançamento:</strong> <span id="modalGameYear">2026</span></p>
+                    </div>
+                </div>
+                <div class="details-right">
+                    <h3 id="modalGameTitle">Nome do Jogo</h3>
+                    <p id="modalGameSynopsis" class="details-synopsis">Sinopse do game...</p>
+                    
+                    <form id="checkoutForm" class="checkout-form">
+                        <h4 class="checkout-title"><i class="fa-solid fa-shield-halved text-glow-green"></i> DADOS DE PAGAMENTO</h4>
+                        <div class="form-group">
+                            <label for="checkoutName">NOME COMPLETO</label>
+                            <input type="text" id="checkoutName" required placeholder="Nome igual ao do cartão">
+                        </div>
+                        <div class="form-group">
+                            <label for="checkoutEmail">E-MAIL DE ENTREGA</label>
+                            <input type="email" id="checkoutEmail" required placeholder="seuemail@provedor.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="checkoutCard">NÚMERO DO CARTÃO</label>
+                            <div class="input-icon-wrapper">
+                                <input type="text" id="checkoutCard" required maxlength="19" placeholder="0000 0000 0000 0000">
+                                <i class="fa-solid fa-credit-card input-inner-icon"></i>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group half-width">
+                                <label for="checkoutExpiry">VALIDADE</label>
+                                <input type="text" id="checkoutExpiry" required maxlength="5" placeholder="MM/AA">
+                            </div>
+                            <div class="form-group half-width">
+                                <label for="checkoutCvv">CVV</label>
+                                <input type="text" id="checkoutCvv" required maxlength="4" placeholder="000">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn-login full-width-btn purchase-highlight-btn">
+                            <i class="fa-solid fa-lock"></i> CONCLUIR COMPRA DIGITAL
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="cartModal">
+        <div class="modal-box">
+            <button class="close-modal" id="closeCartModalBtn">&times;</button>
+            <h3>SEU CARRINHO</h3>
+            <p>Lista de jogos selecionados para compra:</p>
+            
+            <div id="cartItemsList" class="cart-items-list">
+                </div>
+            
+            <div class="cart-total-wrapper">
+                <span>Total de Itens: <strong id="cartTotalItems">0</strong></span>
+            </div>
+            
+            <button class="btn-login full-width-btn" id="btnCheckoutCart" style="margin-top: 20px;">
+                <i class="fa-solid fa-credit-card"></i> IR PARA O PAGAMENTO
+            </button>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="loginModal">
+        <div class="modal-box">
+            <button class="close-modal" id="closeLoginBtn">&times;</button>
+            <h3>ACESSE SUA CONTA</h3>
+            <p>Insira suas credenciais com segurança</p>
+            
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="email">E-MAIL</label>
+                    <input type="email" id="email" required placeholder="seuemail@vortex.com">
+                </div>
+                <div class="form-group">
+                    <label for="password">SENHA</label>
+                    <input type="password" id="password" required placeholder="••••••••">
+                </div>
+                <button type="submit" class="btn-login full-width-btn">ENTRAR NA VORTEX</button>
+            </form>
+            <div class="form-footer">
+                <a href="#">Esqueceu a senha?</a>
+                <p>Não tem conta? <a href="#" class="text-glow-green">Cadastre-se</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

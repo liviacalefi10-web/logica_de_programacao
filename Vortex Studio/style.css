@@ -1,0 +1,587 @@
+/* RESET E CONFIGURAÇÕES GERAIS (ESTILO NEON VORTEX) */
+:root {
+    --bg-dark: #020204;
+    --bg-card: #08080f;
+    --bg-alt: #040408;
+    --pink-neon: #e60067;
+    --green-neon: #32d912;
+    --text-white: #ffffff;
+    --text-gray: #a3a6b8;
+    --led-pink: 0 0 12px #e60067, 0 0 4px #e60067;
+    --led-green: 0 0 12px #32d912, 0 0 4px #32d912;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-white);
+    overflow-x: hidden;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-padding {
+    padding: 90px 0;
+}
+
+.bg-alt {
+    background-color: var(--bg-alt);
+}
+
+.logo-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.section-border-pink {
+    border-bottom: 1px solid rgba(230, 0, 103, 0.15);
+}
+.section-border-green {
+    border-bottom: 1px solid rgba(50, 217, 18, 0.15);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: 900;
+    font-size: 1.4rem;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
+
+.logo-text {
+    display: flex;
+    align-items: center;
+}
+
+.vortex-text {
+    color: var(--pink-neon);
+    text-shadow: var(--led-pink);
+}
+
+.studio-text {
+    color: var(--green-neon);
+    text-shadow: var(--led-green);
+    margin-left: 6px;
+}
+
+.text-glow-pink { color: var(--pink-neon); text-shadow: var(--led-pink); }
+.text-glow-green { color: var(--green-neon); text-shadow: var(--led-green); }
+
+.section-header-neon {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.section-header-neon i {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+.icon-neon-pink { color: var(--pink-neon); filter: drop-shadow(var(--led-pink)); }
+.icon-neon-green { color: var(--green-neon); filter: drop-shadow(var(--led-green)); }
+
+.section-title-neon {
+    font-size: 1.8rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+.section-subtitle-neon {
+    color: var(--text-gray);
+    font-size: 1rem;
+}
+
+/* NAVBAR */
+header {
+    background-color: rgba(2, 2, 4, 0.9);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(12px);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+}
+
+.menu a {
+    color: #e5e5e7;
+    text-decoration: none;
+    margin: 0 14px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: var(--pink-neon);
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.btn-login {
+    background: transparent;
+    border: 1px solid var(--pink-neon);
+    color: #ffffff;
+    padding: 8px 22px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    box-shadow: inset 0 0 4px rgba(230, 0, 103, 0.2);
+    transition: 0.3s;
+}
+
+.btn-login:hover {
+    background: var(--pink-neon);
+    box-shadow: var(--led-pink);
+}
+
+.btn-outline-pink {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    border: 1px solid var(--pink-neon);
+    color: #ffffff;
+    padding: 12px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+.btn-outline-pink:hover {
+    background: rgba(230, 0, 103, 0.1);
+    box-shadow: var(--led-pink);
+}
+
+.btn-outline-green {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    border: 1px solid var(--green-neon);
+    color: #ffffff;
+    padding: 12px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+.btn-outline-green:hover {
+    background: rgba(50, 217, 18, 0.1);
+    box-shadow: var(--led-green);
+}
+
+.center-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* HERO SECTION */
+.hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    padding-top: 100px;
+    background: radial-gradient(circle at 50% 40%, rgba(230,0,103,0.22) 0%, rgba(2,2,4,1) 55%),
+                radial-gradient(circle at 80% 30%, rgba(50,217,18,0.12) 0%, rgba(2,2,4,1) 50%);
+    position: relative;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.hero-left {
+    max-width: 520px;
+    z-index: 5;
+}
+
+.hero-tagline {
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero-subtitle {
+    font-size: 1.05rem;
+    color: var(--text-gray);
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+.hero-right-img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero-center-logo img {
+    max-height: 420px;
+    width: auto;
+    mix-blend-mode: screen;
+    filter: brightness(1.2) contrast(1.1) drop-shadow(0 0 35px #e60067);
+    animation: floatAnimation 4s ease-in-out infinite;
+}
+
+@keyframes floatAnimation {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+}
+
+/* REDES SOCIAIS LATERAIS FLUTUANTES */
+.sidebar-socials {
+    position: absolute;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 10;
+}
+.sidebar-socials a {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1.25rem;
+    transition: 0.3s;
+}
+.sidebar-socials a:hover {
+    color: var(--pink-neon);
+    transform: scale(1.15);
+    filter: drop-shadow(var(--led-pink));
+}
+
+/* SISTEMA DE GRID - 12 JOGOS DE COMPRA */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.game-card {
+    background: #06060b;
+    border: 1px solid rgba(230, 0, 103, 0.15);
+    border-radius: 12px;
+    padding: 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.game-card:hover {
+    border-color: var(--pink-neon);
+    box-shadow: 0 8px 20px rgba(230, 0, 103, 0.2);
+    transform: translateY(-4px);
+}
+
+.game-img {
+    height: 160px;
+    border-radius: 8px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 15px;
+}
+
+.game-card h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.game-card p {
+    color: var(--text-gray);
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.btn-card {
+    width: 100%;
+    background: transparent;
+    border: 1px solid rgba(230, 0, 103, 0.4);
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: 0.3s;
+}
+.game-card:hover .btn-card {
+    border-color: var(--green-neon);
+    color: var(--green-neon);
+    background: rgba(50, 217, 18, 0.05);
+    box-shadow: var(--led-green);
+}
+
+/* ESTILO DE LISTAS */
+.list-neon-container {
+    max-width: 500px;
+    margin: 0 auto;
+    background: #05050a;
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    border-radius: 12px;
+    padding: 10px 0;
+}
+
+.list-neon-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 25px;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.02);
+}
+.list-neon-item:last-child {
+    border-bottom: none;
+}
+.list-neon-item i {
+    font-size: 1.1rem;
+}
+.section-border-pink .list-neon-item i { color: var(--pink-neon); }
+.section-border-green .list-neon-item i { color: var(--green-neon); }
+
+/* SEÇÃO 5: NOVIDADES LISTA */
+.news-neon-list {
+    max-width: 550px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.news-neon-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #05050a;
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.news-img-placeholder {
+    width: 70px;
+    height: 55px;
+    border-radius: 6px;
+    background-size: cover;
+    background-position: center;
+}
+
+.news-text-content h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+.news-text-content span {
+    font-size: 0.8rem;
+    color: var(--text-gray);
+}
+
+/* MENU MOBILE */
+.menu-toggle { display: none; font-size: 1.3rem; cursor: pointer; }
+
+/* FOOTER */
+footer {
+    background: #010102;
+    padding: 30px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.02);
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--text-gray);
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-logo {
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+
+/* MODAL DE COMPRA / DETALHES DO JOGO */
+.details-box {
+    max-width: 700px;
+    width: 90%;
+    border-color: var(--green-neon) !important;
+    box-shadow: var(--led-green) !important;
+}
+
+.details-content-wrapper {
+    display: flex;
+    gap: 30px;
+    margin-top: 15px;
+}
+
+.details-left {
+    flex: 1;
+}
+
+.details-right {
+    flex: 1.2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.details-preview-img {
+    width: 100%;
+    height: 280px;
+    border-radius: 8px;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.details-right h3 {
+    font-size: 1.8rem;
+    color: white;
+    font-weight: 800;
+    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+}
+
+.details-synopsis {
+    color: var(--text-gray);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.details-meta {
+    background: rgba(255, 255, 255, 0.02);
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    border-left: 3px solid var(--pink-neon);
+}
+
+.details-meta p {
+    margin-bottom: 6px;
+}
+.details-meta p:last-child {
+    margin-bottom: 0;
+}
+
+.purchase-highlight-btn {
+    border-color: var(--green-neon);
+    background: transparent;
+    font-size: 1rem;
+    padding: 14px;
+}
+.purchase-highlight-btn:hover {
+    background: var(--green-neon);
+    color: black;
+    font-weight: 800;
+    box-shadow: var(--led-green);
+}
+
+/* MODAL ESTRUTURA BASE GERAL */
+.modal-overlay {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(2, 2, 4, 0.94);
+    backdrop-filter: blur(8px);
+    display: flex; justify-content: center; align-items: center;
+    z-index: 2000;
+    opacity: 0; pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.modal-overlay.active { opacity: 1; pointer-events: auto; }
+
+.modal-box {
+    background: #06060b;
+    padding: 40px;
+    border-radius: 12px;
+    position: relative;
+    border: 1px solid var(--pink-neon);
+    box-shadow: var(--led-pink);
+    transform: scale(0.85);
+    transition: transform 0.3s ease;
+}
+
+.modal-overlay.active .modal-box { transform: scale(1); }
+.close-modal {
+    position: absolute; top: 15px; right: 20px;
+    background: transparent; border: none;
+    color: var(--text-gray); font-size: 1.8rem; cursor: pointer;
+    z-index: 10;
+}
+.close-modal:hover { color: var(--pink-neon); }
+
+.modal-box h3 { font-size: 1.4rem; margin-bottom: 5px; font-weight: 800; letter-spacing: 1px;}
+.modal-box p { color: var(--text-gray); font-size: 0.9rem; margin-bottom: 25px;}
+
+.form-group { margin-bottom: 20px; }
+.form-group label { display: block; margin-bottom: 8px; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.5px; }
+.form-group input {
+    width: 100%; padding: 12px;
+    background: #020204; border: 1px solid rgba(255, 255, 255, 0.08);
+    color: white; border-radius: 6px; outline: none; transition: 0.3s;
+}
+.form-group input:focus { border-color: var(--green-neon); box-shadow: 0 0 8px rgba(50, 217, 18, 0.2); }
+.full-width-btn { width: 100%; margin-top: 10px; padding: 12px 0; }
+.form-footer { text-align: center; margin-top: 20px; font-size: 0.85rem;}
+.form-footer a { color: var(--text-gray); text-decoration: none; display: block; margin-bottom: 5px;}
+
+/* RESPONSIVIDADE GERAL */
+@media (max-width: 992px) {
+    .menu { display: none; }
+    .menu-toggle { display: block; }
+    .hero-container { flex-direction: column; text-align: center; gap: 40px; }
+    .hero-left { max-width: 100%; }
+    .sidebar-socials { display: none; }
+    .footer-content { flex-direction: column; gap: 15px; }
+    .details-content-wrapper { flex-direction: column; gap: 20px; }
+    .details-preview-img { height: 180px; }
+}
+
+@media (max-width: 576px) {
+    .hero-title { font-size: 2.4rem; }
+    .hero-tagline { font-size: 1.5rem; }
+    .modal-box { padding: 25px 15px; }
+}
